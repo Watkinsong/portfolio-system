@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+
+html {
+  font-family:    "Arial", "sans serif";
+  width:          210mm;
+}
+
+h3.projectName {
+  color:          #407DC9;  
+}
+
+a {
+  color:          #407DC9;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  font-weight:     bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table#projects tr {
+  border:         1px solid #000;
+  width:          210mm;
+}
+
+tr.project h3 {
+  font-size:      140%;
+}
+
+.projectMetadata {
+  vertical-align: top;
+  width:          70mm;
+}
+
+.projectDescription {
+  vertical-align: top;
+}
+
+.copyright {
+  font-size:      80%;
+}
+
+.backToPortfolio {
+  font-style:     italic;
+}
+
+#swoof p {
+  line-height:    50%;
+}
+
+a.toggler {
+  font-size:       13px;
+  text-decoration: none;
+}
+
+.displayNone {
+  display:         none;
+}
+
+.displayBlock {
+  display:         block;
+}
