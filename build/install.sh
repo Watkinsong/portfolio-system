@@ -34,7 +34,6 @@ cp db/*.ini $INSTALL_DIR/db
 cp images/*.jpg $PUBLIC_HTML_DIR/images/
 cp images/*.png $PUBLIC_HTML_DIR/images/
 cp downloads/* $PUBLIC_HTML_DIR/downloads/
-rm $PUBLIC_HTML_DIR/downloads/.gitignore
 
 ESCAPED_INSTALL_DIR=$(echo "$INSTALL_DIR" | sed "s/\//\\\|/g" | sed "s/|/\//g")
 
