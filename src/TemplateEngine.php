@@ -54,6 +54,11 @@ class TemplateEngine
     return $rv;
   }
 
+  /**
+   * Converts all [link] -tags in an input to HTML -code.
+   *
+   * @param  $input  Reference to a content variable that is modified.
+   */
   public function processLinks(&$input)
   {
     $matched_counts = preg_match_all("/\[link .*?\]/", $input, $matches);
@@ -74,6 +79,11 @@ class TemplateEngine
       }
   }
 
+  /**
+   * Converts all [image] -tags in an input to HTML -code.
+   *
+   * @param  $input  Reference to a content variable that is modified.
+   */
   public function processImages(&$input)
   {
     $matched_counts = preg_match_all("/\[image .*?\]/", $input, $matches);
@@ -94,10 +104,30 @@ class TemplateEngine
       }
   }
 
+  public function processDownloadLinks(&$input)
+  {
+    $matched_counts = preg_match_all("/\[download .*?\]/", $input, $matches);
+
+    if ( $matched_counts > 0 )
+      {
+        foreach ( $matches[0] as $match )
+          {
+            $download_name = $match;
+            $download_name = substr($download_name, strlen("[download "));
+            $download_name = substr($download_name, 0, -1);
+
+            $replacement = '<a href="downloads/' . $download_name . '">' . $download_name . ' <img src="images/open_in_new_window.jpg" alt="Opens in a new window." /></a>';
+
+            $input = preg_replace("/\[download $download_name\]/", $replacement, $input);
+          }
+      }
+  }
+
   public function parseDetails($details)
   {
     $this->processLinks($details);
     $this->processImages($details);
+    $this->processDownloadLinks($details);
     print nl2br($details);
   }
 
