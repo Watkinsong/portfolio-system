@@ -97,7 +97,7 @@ class TemplateEngine
             $image_name         = substr($image_name, 0, -1);
             $escaped_image_name = preg_replace("#\.#", "\.", $image_name);
 
-            $replacement = '<img src="images/' . $image_name . '" />';
+            $replacement = '<img src="images/' . $image_name . '" alt="images/' . $image_name . '" />';
 
             $input = preg_replace("/\[image $escaped_image_name\]/", $replacement, $input);
           }
