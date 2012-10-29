@@ -36,8 +36,9 @@
     <?php print $tpl->project->getMainTools(); ?>
     </p>
     <a href="#" class="toggler" id="project_<?php print $tpl->project->getProjectId(); ?>_details_toggler">[Show more]</a>
+    <br />
+    <br />
     <div id="project_<?php print $tpl->project->getProjectId(); ?>_details" class="displayNone">
-      <p>
       <?php print $tpl->parseDetails($tpl->project->getDetails()); ?>
       <?php if ( count($tpl->project->getSpecs()) > 0 ): ?>
       <br />
@@ -51,7 +52,6 @@
         <?php endforeach; ?>
         </ul>
       <?php endif;?>
-      </p>
       <?php if ( $tpl->project->getProjectPage() !== NULL): ?>
         <p>
         <strong>Project website: </strong> <a target="__blank" href="<?php print $tpl->project->getProjectPage();?>"><?php print $tpl->project->getProjectPage();?> <img src="images/open_in_new_window.jpg" alt="Opens in a new window." /></a>
