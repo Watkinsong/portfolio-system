@@ -123,11 +123,18 @@ class TemplateEngine
       }
   }
 
+  public function processNonprintContent(&$input)
+  {
+    $input = preg_replace("/\[noprint\]/", '<span class="noprint">', $input);
+    $input = preg_replace("/\[\/noprint\]/", '</span>', $input);
+  }
+
   public function parseDetails($details)
   {
     $this->processLinks($details);
     $this->processImages($details);
     $this->processDownloadLinks($details);
+    $this->processNonprintContent($details);
     print nl2br($details);
   }
 
