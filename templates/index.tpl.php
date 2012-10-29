@@ -6,8 +6,7 @@
   <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
   <meta name="description" content="" />
   <title>Arttu Salonen: Portfolio</title>
- </head>
-<script type="text/javascript">
+  <script type="text/javascript">
 
 function onLoad()
 {
@@ -35,7 +34,8 @@ function toggleDetails(project_id)
     }
 }
 
-</script>
+  </script>
+ </head>
 <body onload="onLoad();">
 <h1>Arttu Salonen: Portfolio</h1>
 <pre>&lt; http://portfolio.watkinson.fi &gt;</pre>
