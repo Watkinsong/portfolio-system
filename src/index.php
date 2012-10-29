@@ -19,12 +19,4 @@ else
     $template_engine->display("error.tpl.php");
   }
 
-  /*
-   * NEXT ON:
-   *    - think about how to add images or anchor tags automatically
-   *        - this requires that images and other stuff is available under public_html
-   *    - add media=print for CSS
-   *    - consult Kristian about fine-tuning of the layout
-   */
-
 ?>
