@@ -3,6 +3,7 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
   <meta name="description" content="" />
   <title>Arttu Salonen: Portfolio</title>
  </head>
@@ -37,7 +38,7 @@ function toggleDetails(project_id)
 </script>
 <body onload="onLoad();">
 <h1>Arttu Salonen: Portfolio</h1>
-<p>&lt; http://portfolio.watkinson.fi &gt;</p>
+<pre>&lt; http://portfolio.watkinson.fi &gt;</pre>
 <div id="swoof">
 <p id="swooffy"><strong>contact:</strong>
 art.salonen<img src="images/swoof.png" alt="" />gmail.com
