@@ -65,5 +65,9 @@ a.toggler {
 }
 
 .download {
-  display: none;  
+  display:        none;
+}
+
+.noprint {
+  display:        none;
 }
