@@ -23,6 +23,7 @@ mkdir $INSTALL_DIR/src
 mkdir $PUBLIC_HTML_DIR
 mkdir $PUBLIC_HTML_DIR/css
 mkdir $PUBLIC_HTML_DIR/images
+mkdir $PUBLIC_HTML_DIR/downloads
 
 cp src/*.php $INSTALL_DIR/src
 mv $INSTALL_DIR/src/index.php $PUBLIC_HTML_DIR/
@@ -32,6 +33,8 @@ cp templates/*.tpl.php $INSTALL_DIR/templates
 cp db/*.ini $INSTALL_DIR/db
 cp images/*.jpg $PUBLIC_HTML_DIR/images/
 cp images/*.png $PUBLIC_HTML_DIR/images/
+cp downloads/* $PUBLIC_HTML_DIR/downloads/
+rm $PUBLIC_HTML_DIR/downloads/.gitignore
 
 ESCAPED_INSTALL_DIR=$(echo "$INSTALL_DIR" | sed "s/\//\\\|/g" | sed "s/|/\//g")
 
