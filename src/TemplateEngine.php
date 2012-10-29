@@ -116,7 +116,7 @@ class TemplateEngine
             $download_name = substr($download_name, strlen("[download "));
             $download_name = substr($download_name, 0, -1);
 
-            $replacement = '<a href="downloads/' . $download_name . '">' . $download_name . ' <img src="images/open_in_new_window.jpg" alt="Opens in a new window." /></a>';
+            $replacement = '<a href="downloads/' . $download_name . '">' . $download_name . ' <img src="images/download.png" alt="Downloads the resource." /></a>';
 
             $input = preg_replace("/\[download $download_name\]/", $replacement, $input);
           }
