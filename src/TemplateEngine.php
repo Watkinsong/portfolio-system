@@ -129,9 +129,29 @@ class TemplateEngine
     $input = preg_replace("/\[\/noprint\]/", '</span>', $input);
   }
 
+  public function processGithubLinks(&$input)
+  {
+    $matched_counts = preg_match_all("/\[github_link .*?\]/", $input, $matches);
+
+    if ( $matched_counts > 0 )
+      {
+        foreach ( $matches[0] as $match )
+          {
+            $repo_name         = $match;
+            $repo_name         = substr($repo_name, strlen("[github_link "));
+            $repo_name         = substr($repo_name, 0, -1);
+
+            $replacement = '<a href="https://github.com/Watkinson-/' . $repo_name . '" target="__blank">https://github.com/Watkinson-/' . $repo_name . ' <img src="images/open_in_new_window.jpg" alt="Opens in a new window." /></a>';
+
+            $input = preg_replace("/\[github_link $repo_name\]/", $replacement, $input);
+          }
+      }
+  }
+
   public function parseDetails($details)
   {
     $this->processLinks($details);
+    $this->processGithubLinks($details);
     $this->processImages($details);
     $this->processDownloadLinks($details);
     $this->processNonprintContent($details);
