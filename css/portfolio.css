@@ -48,7 +48,7 @@ tr.project h3 {
   font-style:     italic;
 }
 
-#swoof p {
+#swoof p#swooffy {
   line-height:    50%;
 }
 
@@ -63,4 +63,8 @@ a.toggler {
 
 .displayBlock {
   display:         block;
+}
+
+p.about {
+  font-size:       15px;
 }
