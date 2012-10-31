@@ -66,3 +66,6 @@
     </div>
     </td>
 </tr>
+<tr>
+    <td colspan="2"><hr /></td>
+</tr>

@@ -53,7 +53,7 @@ including this portfolio system: <?php $link = "[github_link portfolio-system]";
 </div>
 
 <h2>Projects</h2>
-<table rules="rows" cellpadding="10" id="projects">
+<table cellpadding="10" id="projects">
 <?php
 
 foreach ( $tpl->projects as $project )
