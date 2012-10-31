@@ -61,6 +61,11 @@ class ProjectLoader
         $project->setProjectPage($result_row["project_page"]);
       }
 
+    if ( array_key_exists("reference", $result_row) )
+      {
+        $project->setReference($result_row["reference"]);
+      }
+
     return $project;
   }
 

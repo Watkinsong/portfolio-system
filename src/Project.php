@@ -77,6 +77,11 @@ class Project
   private $project_page;
 
   /**
+   * The reference of the project, containing possibly a name, title and a phone number.
+   */
+  private $reference;
+
+  /**
    * The constructor.
    *
    * @param  $project_id           Id of the project, an integer.
@@ -244,6 +249,26 @@ class Project
   public function getProjectPage()
   {
     return $this->project_page;
+  }
+
+  /**
+   * Sets the reference of the project.
+   *
+   * @param  $reference  The reference of the project. A string containing the name, title and a phnone number.
+   */
+  public function setReference($reference)
+  {
+    $this->reference = $reference;
+  }
+
+  /**
+   * Returns the reference of the project.
+   *
+   * @retval  string  The reference of the project. A string containing the name, title and a phone number.
+   */
+  public function getReference()
+  {
+    return $this->reference;
   }
 }
 
