@@ -43,8 +43,9 @@ function toggleDetails(project_id)
 <p id="swooffy"><strong>contact:</strong>
 art.salonen<img src="images/swoof.png" alt="" />gmail.com
 </p>
-<p class="noprint about">
-<strong>About this page:</strong> here are listed many of the projects that I have worked on, both
+<h3 class="noprint">About this page</h3>
+<p class="about noprint">
+Here are listed many of the projects that I have worked on, both
 professionally and as a hobby. Some of the projects have their source code available at my GitHub
 -account (<?php $link = "[github_link  ]"; $tpl->processGithubLinks($link); print $link; ?>),
 including this portfolio system: <?php $link = "[github_link portfolio-system]"; $tpl->processGithubLinks($link); print $link; ?>.
@@ -52,7 +53,7 @@ including this portfolio system: <?php $link = "[github_link portfolio-system]";
 </div>
 
 <h2>Projects</h2>
-<table rules="rows" cellpadding="10" width="900" id="projects">
+<table rules="rows" cellpadding="10" id="projects">
 <?php
 
 foreach ( $tpl->projects as $project )
