@@ -1,12 +1,12 @@
 @CHARSET "UTF-8";
 
 html {
-  font-family:    "Arial", "sans serif";
-  width:          210mm;
+  font-family:    "monospace", "Georgia", "sans serif";
+  color:          #313030;
 }
 
-h3.projectName {
-  color:          #407DC9;  
+strong {
+  color:          #5a5858;
 }
 
 a {
@@ -20,6 +20,10 @@ a:link, a:visited, a:active {
 
 a:hover {
   text-decoration: underline;
+}
+
+table#projects {
+  width:          900px;
 }
 
 table#projects tr {
@@ -44,10 +48,6 @@ tr.project h3 {
   font-size:      80%;
 }
 
-.backToPortfolio {
-  font-style:     italic;
-}
-
 #swoof p#swooffy {
   line-height:    50%;
 }
@@ -66,5 +66,5 @@ a.toggler {
 }
 
 p.about {
-  font-size:       15px;
+  padding-left:    10px;
 }

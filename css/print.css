@@ -1,8 +1,7 @@
 @CHARSET "UTF-8";
 
 html {
-  font-family:    "Arial", "sans serif";
-  width:          210mm;
+  font-family:    "monospace", "Georgia", "sans serif";
 }
 
 h3.projectName {
@@ -22,9 +21,8 @@ a:hover {
   text-decoration: underline;
 }
 
-table#projects tr {
-  border:         1px solid #000;
-  width:          210mm;
+table#projects {
+  width:          100%;
 }
 
 tr.project h3 {
@@ -33,7 +31,6 @@ tr.project h3 {
 
 .projectMetadata {
   vertical-align: top;
-  width:          70mm;
 }
 
 .projectDescription {
