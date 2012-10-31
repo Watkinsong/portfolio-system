@@ -13,6 +13,12 @@
     <strong>Date:</strong>
     <?php print $tpl->project->getDate(); ?>
     </p>
+    <?php if ($tpl->project->getReference() !== NULL): ?>
+      <p>
+      <strong>Reference:</strong>
+      <?php print $tpl->project->getReference(); ?>
+      </p>
+    <?php endif; ?>
     </td>
     <td class="projectDescription">
     <p>
