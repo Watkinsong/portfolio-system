@@ -41,7 +41,7 @@ function toggleDetails(project_id)
 <pre>&lt; http://portfolio.watkinson.fi &gt;</pre>
 <div id="swoof">
 <p id="swooffy"><strong>contact:</strong>
-art.salonen<img src="images/swoof.png" alt="" />gmail.com
+arttu<img src="images/swoof.png" alt="" />watkinson.fi
 </p>
 <h3 class="noprint">About this page</h3>
 <p class="about noprint">
